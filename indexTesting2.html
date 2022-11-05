@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bronance Landing Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .video-title {
+            background: #000;
+        }
+
+        @media only screen and (min-width : 768px) {
+
+            /**
+   * Parallax
+   */
+            .parallax-container {
+                perspective: 1px;
+                transform-style: preserve-3d;
+                height: 100vh;
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+
+            .parallax {
+                display: flex;
+                flex: 1 0 auto;
+                position: relative;
+                height: 100vh;
+                transform: translateZ(-1px) scale(2);
+                z-index: -1;
+            }
+
+            .content {
+                display: block;
+                position: relative;
+                /* green background color */
+                background-color: #528265;
+                z-index: 1;
+            }
+
+            /**
+   * Video Player
+   */
+            .video-wrapper {
+                height: 100vh;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+            }
+
+            .video-wrapper video {
+                height: auto;
+                min-height: 100%;
+                min-width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: auto;
+            }
+
+            .video-title {
+                /* changed from 0,0,0,.7 for white background. need extra fourth zero otherwise black for some reason*/
+                background-color: rgba(0, 0, 0, 0);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 99;
+            }
+        }
+    </style>
+
+</head>
+
+<!-- Video from https://coverr.co/ -->
+<main>
+    <article class="parallax-container">
+        <header class="parallax">
+            <!-- testing 111111 -->
+            <div class="video-wrapper">
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <div>
+
+                </div>
+
+                <txt2>
+
+                    <br />
+                    ||
+                    <br />
+                    ||
+                    <br />
+                    ||
+                    <br />
+                    ||
+                    <br />
+                    ||
+                    <br />
+                    ||
+                    <br />
+                    V
+                </txt2>
+                <h1 class="leading-none p-4 text-white text-3xl uppercase video-title md:p-8 md:text-5xl">
+                    <div class="container">
+                        <h1>
+                            <i></i>
+                            <span id="a">BRONANCE</span>
+                            <span id="b">HOLDINGS</span>
+                            <span id="c">FOOD DELIVERY</span>
+                        </h1>
+                </h1>
+
+            </div>
+        </header>
+
+        <br /><br /><br /><br /><br /><br />
+
+        <div class="bg-black content leading-normal py-12 px-4 md:px-12">
+            <div class="mx-auto max-w-md">
+                <br>
+                <txt1>DESCRIPTION OF PROJECT</txt1>
+                <!-- reference oldSplash page for description not broken down in h2 tags -->
+                <br />
+
+                <txt2>In our efforts to create a seamless experience for our customers, we have developed a platform
+                    that allows users to purchase sets of meals that are delivered directly to their homes. Our
+                    platform makes it easy for users to find practical options based on a variety of meal
+                    characteristics. Whether you are following a vegan, keto, or paleo diet, we’ve got you covered!
+                    We also offer services for anyone without dietary restrictions; by using our service you can
+                    receive your macronutrient breakdown as well as what foods you need in your diet to stay
+                    healthy!</txt2>
+                <br><br>
+                <txt2><b>As a Bronance user, you are encouraged to make healthier choices!</b></txt2>
+                <br><br><br>
+
+                <txt1>HOW TO USE OUR WEBSITE</txt1>
+                <txt2>We provide services that deliver food straight to your door! On this site you have the option to
+                    pick the best looking meals of your liking.
+                    Visit our Health Guidelines page for more information on what composition makes up a healthy diet.
+                    After
+                    choosing meals among our healthy choices, you may find yourselves at our Meal Offerings page. Here
+                    you can
+                    actually add the meals you would like to your cart. Lastly, if you navigate to our profile page you
+                    will either
+                    be directed to login or you will see your profile information. Here you can view your personal
+                    information you
+                    signed up with along with the ability to view your transaction history. In the future, this will
+                    give users the
+                    ability to track their orders as well as many other features!
+                </txt2>
+                <br><br><br><br>
+
+                <hr>
+
+                <br><br>
+
+
+            </div>
+        </div>
+
+        <!-- in white -->
+
+        <br><br><br><br>
+        <div>
+            <div>
+                <div>
+                    <div style="text-align:center" padding: 1000px>
+                        <txt2><b>Returning Customer?</b></txt2>
+                        <br>
+                        <br>
+                        <txt2>We've got you covered. With your permission, we save your address, card information and
+                            even
+                            food choices to better determine the food choices that fit your dietary needs!
+                            In the future we plan to implement features that will give specific recommendations based on
+                            both, what is best for your health, and your preferences based on your order history'</txt2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+
+
+        <style>
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+                background-color: white;
+                /* background-color: #fff0db; */
+            }
+
+            .container {
+                padding: 5px 16px;
+            }
+
+            .container::after,
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                /* background-color: #555; */
+
+            }
+
+            .row {
+                /* very light green */
+                /* background-color: #edfced; */
+                background-color: #528265;
+                /* light beige */
+                /* background-color: #fff0db; */
+            }
+
+            .title {
+                color: grey;
+            }
+
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .button:hover {
+                background-color: #555;
+            }
+
+            /* for last two */
+            .button2 {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                align-items: center;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 20%;
+                font-size: 20px;
+            }
+
+            .button2:hover {
+                background-color: #555;
+            }
+        </style>
+
+        <div class="row">
+
+            <div>
+                <div style="text-align:center">
+                    <br>
+                    <br>
+                    <br>
+                    <txt1>MEET THE TEAM</txt1>
+                </div>
+
+                <!-- making this smaller overall -->
+                <div>
+                    <div>
+                        <div>
+
+
+
+                            <br><br>
+                            <div class="column">
+
+                                <div class="card">
+                                    <br>
+                                    <img src="alexHeadshot.png" alt="Alex Headshot" style="width:100%">
+
+                                    <div class="container">
+                                        <br>
+                                        <h2>Alex Rittler</h2>
+                                        <p class="title">Full Stack Developer</p>
+                                        <br>
+                                        <p>Alex recently graduated from Haverford College, where he studied computer
+                                            science and philosophy. Before joining Credera,
+                                            he interned at Lowe's, working with the site audit team to develop a
+                                            scalable JavaScript framework to improve the speed and
+                                            scope of Lowes.com UI testing with service calls. Prior to that, Alex also
+                                            interned at Argonne National Laboratory,
+                                            performing climate data analysis with NumPy, and at UChicago, where he
+                                            implemented a Python package to track and quantify
+                                            storms using novel algorithms developed there.</p>
+                                        <br>
+                                        <p>alex.rittler@credera.com</p>
+                                        <br>
+                                        <p><button
+                                                onclick="window.location.href='https://www.linkedin.com/in/arittler/';"
+                                                class="button">Contact</button></p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card">
+                                    <br>
+                                    <img src="saranyaHeadshot.jpeg" alt="Saranya Headshot" style="width:100%">
+
+                                    <div class="container">
+                                        <br>
+                                        <h2>Saranya Putrevu</h2>
+                                        <p class="title">Full Stack Developer</p>
+                                        <br>
+                                        <p>Alex recently graduated from Haverford College, where he studied computer
+                                            science and philosophy. Before joining Credera,
+                                            he interned at Lowe's, working with the site audit team to develop a
+                                            scalable JavaScript framework to improve the speed and
+                                            scope of Lowes.com UI testing with service calls. Prior to that, Alex also
+                                            interned at Argonne National Laboratory,
+                                            performing climate data analysis with NumPy, and at UChicago, where he
+                                            implemented a Python package to track and quantify
+                                            storms using novel algorithms developed there.</p>
+                                        <br>
+                                        <p>saranya.putrevu@credera.com</p>
+                                        <br>
+                                        <p><button
+                                                onclick="window.location.href='https://www.linkedin.com/in/saranyaputrevu/';"
+                                                class="button">Contact</button></p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card">
+                                    <br>
+                                    <img src="headshotSquare.jpg" alt="Dominic Headshot" style="width:100%">
+                                    <div class="container">
+                                        <br>
+                                        <h2>Dominic Scheerer</h2>
+                                        <p class="title">Full Stack Developer</p>
+                                        <br>
+                                        <p>Alex recently graduated from Haverford College, where he studied computer
+                                            science and philosophy. Before joining Credera,
+                                            he interned at Lowe's, working with the site audit team to develop a
+                                            scalable JavaScript framework to improve the speed and
+                                            scope of Lowes.com UI testing with service calls. Prior to that, Alex also
+                                            interned at Argonne National Laboratory,
+                                            performing climate data analysis with NumPy, and at UChicago, where he
+                                            implemented a Python package to track and quantify
+                                            storms using novel algorithms developed there.</p>
+                                        <br>
+                                        <p>dominic.scheerer@credera.com</p>
+                                        <br>
+                                        <p><button
+                                                onclick="window.location.href='https://www.linkedin.com/in/dominicscheerer/';"
+                                                class="button">Contact</button></p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <style>
+            .btn {
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: 28px;
+                -webkit-box-shadow: 0px 1px 3px #666666;
+                -moz-box-shadow: 0px 1px 3px #666666;
+                box-shadow: 0px 1px 3px #666666;
+                font-family: Georgia;
+                color: #ffffff;
+                font-size: 20px;
+                background: #528265;
+                padding: 10px 20px 10px 20px;
+                border: solid #4b735a 2px;
+                text-decoration: none;
+            }
+
+            .btn:hover {
+                background: #398555;
+                text-decoration: none;
+            }
+        </style>
+
+        <br><br><br>
+        <div>
+            <br>
+            <div>
+                <div>
+                    <div>
+                        <div style="text-align:center">
+                            <txt2>Continue Exploring Our Business!</txt2>
+                            <br><br>
+                            <button class="btn">Health Tips & Tricks</button>
+                            <br><br>
+                            <button class="btn">Shop For Meals</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+    </article>
+</main>
+
+</html>
